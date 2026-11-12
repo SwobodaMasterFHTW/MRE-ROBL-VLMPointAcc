@@ -19,9 +19,19 @@ choices across instances and viewpoints.
 
 # Prerquisites and Installation
 
+Versions used:
+* Ubuntu-26.04
+* Python 3.10.22
+
 ## PyTorch
 
+Source: https://pytorch.org/get-started/locally/
 
+Install:
+`pip3 install torch torchvision`
 
 ## Molmo
 
+Source: https://github.com/allenai/molmo
+
+Model: Molmo 7B-D
