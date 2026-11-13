@@ -28,7 +28,7 @@ Deadline: 29.1.26
 
 * MILESTONE 3: Tests completed/data gathered
 
-* MILESTONE 4: visualize data/write paper
+* MILESTONE 4: visualize data/write paper/cleanup
 
 # Prerquisites and Installation
 
@@ -39,9 +39,6 @@ Versions used:
 ## PyTorch
 
 Source: https://pytorch.org/get-started/locally/
-
-Install:
-`pip3 install torch torchvision`
 
 ## Molmo2 -S
 
