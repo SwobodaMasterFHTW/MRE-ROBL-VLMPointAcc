@@ -43,11 +43,13 @@ Source: https://pytorch.org/get-started/locally/
 Install:
 `pip3 install torch torchvision`
 
-## Molmo -S
+## Molmo2 -S
 
-Source: https://github.com/allenai/molmo
+Source: https://github.com/allenai/molmo2
 
-Model: Molmo 7B-D
+### Models
+Molmo 4B, smaller general-purpose used for experimentation
+?? MolmoPoint, specifically for pointing tasks
 
 ## Qwen3-VL -S
 
