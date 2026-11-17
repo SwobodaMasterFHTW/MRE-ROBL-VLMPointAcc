@@ -1,3 +1,6 @@
 [submodule "molmo2"]
 	path = molmo2
 	url = https://github.com/allenai/molmo2
+[submodule "Qwen3-VL"]
+	path = Qwen3-VL
+	url = https://github.com/QwenLM/Qwen3-VL
