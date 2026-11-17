@@ -36,6 +36,16 @@ Versions used:
 * Ubuntu-26.04
 * Python 3.10.22
 
+# Useful Tools
+Check current transformer version:
+`python3 -c "import transformers; print(transformers.__version__)"`
+
+Change transformer version:
+`python3 -m pip install transformers==x.xx.x`
+
+Set huggingface home directory:
+`HF_HOME="$HOME/.cache/huggingface"`
+
 ## PyTorch
 
 Source: https://pytorch.org/get-started/locally/
@@ -46,9 +56,19 @@ Source: https://github.com/allenai/molmo2
 
 ### Models
 Molmo 4B, smaller general-purpose used for experimentation
-?? MolmoPoint, specifically for pointing tasks
+
+Source: https://huggingface.co/allenai/Molmo2-4B
+Needs transformers v.4.57.1
 
 ## Qwen3-VL -S
+
+Source: https://github.com/QwenLM/Qwen3-VL
+
+### Models
+Qwen3-VL-4B-Instruct 
+
+Source: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
+Needs transformers v.5.17.0
 
 ## Gemma 3 -L
 
