@@ -46,6 +46,8 @@ Change transformer version:
 Set huggingface home directory:
 `HF_HOME="$HOME/.cache/huggingface"`
 
+# Models
+
 ## PyTorch
 
 Source: https://pytorch.org/get-started/locally/
@@ -60,6 +62,10 @@ Molmo 4B, smaller general-purpose used for experimentation
 Source: https://huggingface.co/allenai/Molmo2-4B
 Needs transformers v.4.57.1
 
+Prompt:
+"Point to the exact geometric centre of the green button."
+"Return the point coordinates, nothing else."
+
 ## Qwen3-VL -S
 
 Source: https://github.com/QwenLM/Qwen3-VL
@@ -70,6 +76,39 @@ Qwen3-VL-4B-Instruct
 Source: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 Needs transformers v.5.17.0
 
+Prompt:
+"Point to the exact geometric centre of the green button."
+"Return the point in normalized coordinates from 0 to 1000."
+"Use the format <point coords=\"X Y\"/>. "
+"Return only this tag, nothing else."
+
+Note, that Qwen does not have an internal output convention for pixel pointing, 
+therefore the normalized output needs to be forced via the prompt.
+
 ## Gemma 3 -L
 
 ## RoboPoint -L
+
+# Start pointing task
+
+Start the python scripts via:
+`python3 src/molmo2.py`
+`python3 src/qwen3-vl.py`
+
+Important: Make sure that the required transformers version is active before starting scripts.
+
+Note, that this will download the model weights locally.
+Adjust target picture etc. directly in the script.
+
+# Start Evaluation
+
+Start the evaluation script via:
+`python3 src/evaluation.py -name {string} -x {int} -y {int}`
+
+This call requires three arguments:
+* -name: Name of the model used
+* -x: x-coordinates found by the models, in px
+* -y: y-coordinates found by the models, in px
+
+Important: the reference/ground truth image, including the target pixel-coordinates need to be set manually!
+The src/groundtruth.py script can be used to generate these target coordinates.
