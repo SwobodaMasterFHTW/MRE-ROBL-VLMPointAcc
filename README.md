@@ -30,12 +30,6 @@ Deadline: 29.1.26
 
 * MILESTONE 4: visualize data/write paper/cleanup
 
-# Prerquisites and Installation
-
-Versions used:
-* Ubuntu-26.04
-* Python 3.10.22
-
 # Useful Tools
 Check current transformer version:
 `python3 -c "import transformers; print(transformers.__version__)"`
@@ -45,6 +39,12 @@ Change transformer version:
 
 Set huggingface home directory:
 `HF_HOME="$HOME/.cache/huggingface"`
+
+# Prerquisites and Installation
+
+Versions used:
+* Ubuntu-26.04
+* Python 3.10.22
 
 # Models
 
